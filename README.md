@@ -3,11 +3,11 @@ This is a simple app that allows for searching the algoria API for articles and 
 
 ## Start up
 
-In the project directory, you need to run run:
+In the project directory, you need to run:
 
 ### `npm install`
 
-the run
+then run
 
 ### `npm start`
 
