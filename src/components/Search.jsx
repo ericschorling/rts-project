@@ -1,3 +1,6 @@
+//Search component that allows user to look up articles from the api
+//Handles the search field and the submit button
+
 import React, {useState} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { addHistory, setSearch } from '../features/history/historySlice'
@@ -9,6 +12,8 @@ export const Search = () => {
     const search = useSelector((state) => state.history.search);
     const [subject, setSubject] = useState('');
     
+
+    //Calls API and returns the search information and adds search to history
     const _handleClick = async (e) => {
         e.preventDefault()
         const newPosts = await getPosts(subject)
