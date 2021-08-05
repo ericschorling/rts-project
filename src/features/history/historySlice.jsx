@@ -1,3 +1,7 @@
+
+//Redux slice that controls the search state including search data and the search history
+//Creates multiple actions to update state
+
 import {createSlice } from '@reduxjs/toolkit'
 
 export const historySlice = createSlice({

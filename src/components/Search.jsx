@@ -19,6 +19,7 @@ export const Search = () => {
         const newPosts = await getPosts(subject)
         dispatch(addHistory(subject))
         dispatch(setSearch(newPosts))
+        //clears the search field
         setSubject('')
     }
 
